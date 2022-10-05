@@ -1,0 +1,6 @@
+.App {
+  font-family: var(--chakra-fonts-body);
+  background-color: #000000;
+  background-image: url(./assets/black_background.webp);
+  background-size: cover;
+}

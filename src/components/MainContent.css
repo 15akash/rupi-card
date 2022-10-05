@@ -1,0 +1,87 @@
+.main-content-con {
+    color: white;
+    margin: 0 120px ;
+    display: flex;
+    height: 100vh; 
+    flex-direction: column;
+}
+
+.main-content {
+    padding-top: 200px;
+}
+
+.card-image {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 120px;
+    animation: upDown 5s infinite;
+}
+
+@keyframes upDown {
+    0%, 100% {
+        top: 200px;
+      }
+      50% {
+        top: 230px;
+      }
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-weight: 500;
+    line-height: 54px;
+    margin-bottom: 80px;
+    color: white;
+}
+
+span {
+    color: transparent;
+    -webkit-background-clip: text !important;
+    background: linear-gradient(90deg, #8fffef 25%,#f9f490);
+}
+
+.content-con-form {
+    width: 300px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.phone-number-input {
+    background-color: #454b51 ;
+    border-radius: 10px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-con-input{    
+    background-color: #454b51 ;
+    padding: 0 10px;
+    outline: none;
+ }
+
+.main-content-btn {
+    font-size: 0.875rem;
+    color: #1a202c;
+    background-color: #fdef78;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.checkbox-input {
+    display: flex;
+    margin-top: 20px;
+}
+
+.consent-msg {
+    margin-left: 15px;
+    font-size: 10px;
+    line-height: 0.75rem;
+    color: #7f8081;
+}
