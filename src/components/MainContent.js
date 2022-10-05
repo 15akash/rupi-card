@@ -1,29 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
 import cardLogo from '../assets/card_asset.webp';
 import './MainContent.css';
-import PhoneInput from 'react-phone-number-input'
-import { Field, Form, Formik } from 'formik';
-import background from '../assets/black_background.webp';
 
 
 const MainContent = () => {
-  
-    const [value, setValue] = useState('')
-
-    const phoneNumberHandler = (e) => {
-        setValue(e.target.value)
-    }
+ 
 
   return (
     <div className="main-content-con">
         <div className='main-content'></div>
         <h1>India's Credit <br/>Revolution is here.<br/><span className='graditent-color-content'>Pay 1/3rd. </span>Anywhere.</h1>
-        <img src={cardLogo} className="card-image"/>
-        {/* <Formik>
-        <Form>
-            <Field type="email" name="Phone Number" placeholder="Enter Phone Number"></Field>
-        </Form>
-        </Formik> */}
+        <img src={cardLogo} className="card-image" alt='crd-image' />
         <form className='content-con-form'>
             <div className='phone-number-input'>
                 <input className='content-con-input' type='number' max='10' placeholder='Enter phone number' />
